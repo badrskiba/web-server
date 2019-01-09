@@ -19,11 +19,11 @@ app.use((req, res, next)=>{
   next();
 });
 
-app.use((req, res)=>{
-  res.render('maintenance.hbs', {
-    welcomeMessage: 'the site is in maintenance'
-  })
-})
+// app.use((req, res)=>{
+//   res.render('maintenance.hbs', {
+//     welcomeMessage: 'the site is in maintenance'
+//   })
+// })
 
 app.use(express.static(__dirname + '/public'));
 
